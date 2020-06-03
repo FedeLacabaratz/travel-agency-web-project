@@ -1,0 +1,26 @@
+extends ../layout/index
+block contenido
+    main.container.mt-5
+        .row
+            .col-md-5
+                img.img-fluid(src="img/nosotros.jpg", alt="Imagen de Nosotros")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Ut rhoncus, enim sit amet ullamcorper auctor, ipsum justo aliquet sapien, vel condimentum ante urna a dolor. Suspendisse mattis a urna nec tincidunt. Vivamus venenatis, purus at egestas ornare, justo orci semper diam, eu aliquet urna metus id est. Aenean lectus tortor, interdum blandit iaculis nec, posuere sit amet ligula. Donec dignissim mi justo, vitae dictum tellus dictum vel.
+                p Mauris enim ipsum, fringilla quis sodales vel, scelerisque eu quam. Sed imperdiet risus nec lectus sodales, vel imperdiet massa volutpat. Curabitur dignissim augue nunc, condimentum euismod ipsum pretium sit amet. Nulla facilisi. Nullam suscipit tempor ligula. In laoreet, erat sit amet aliquet sodales, ex dui malesuada erat, nec ultricies odio massa ut arcu. Ut in malesuada tortor.
+                p Nunc viverra purus et ex congue, quis lacinia orci tempor. Maecenas in ornare ex, sed scelerisque mauris. Mauris ac ipsum dui.
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Nam eu tellus bibendum turpis laoreet interdum in eu libero. Nullam id nibh id orci fermentum auctor vel et mauris.
+                .col-md-4
+                    img(src="img/icono_destinos.svg", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Nam eu tellus bibendum turpis laoreet interdum in eu libero. Nullam id nibh id orci fermentum auctor vel et mauris.
+                .col-md-4
+                    img(src="img/icono_precios.svg", class="img-fluid mb-4")
+                    h2.mb-4 Mejor Precio
+                    p Nam eu tellus bibendum turpis laoreet interdum in eu libero. Nullam id nibh id orci fermentum auctor vel et mauris.
