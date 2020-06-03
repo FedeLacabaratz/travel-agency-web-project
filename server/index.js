@@ -29,16 +29,13 @@ const config = configs[app.get('env')];
 app.locals.titulo = config.nombreSitio;
 
 // Muestra el año actual
-app.use(async(req, res, next) => {
+app.use((req, res, next) => {
     // Crear una nueva fecha
-    try {
-        const fecha = await new Date();
-        res.locals.fechaActual = fecha.getFullYear();
-        res.locals.route = req.path;
-        console.log(res.locals)        
-    } catch (error) {
-        next(error);        
-    }
+    const fecha = new Date();
+    res.locals.fechaActual = fecha.getFullYear();
+    res.locals.route = req.path;
+    console.log(res.locals)
+    return next();
 });
 // Ejecutamos el bodyParser
 app.use(bodyParser.urlencoded({extended: true}));
