@@ -35,7 +35,7 @@ app.use((req, res, next) => {
     res.locals.fechaActual = fecha.getFullYear();
     res.locals.route = req.path;
     console.log(res.locals)
-    return next();
+    next();
 });
 // Ejecutamos el bodyParser
 app.use(bodyParser.urlencoded({extended: true}));
