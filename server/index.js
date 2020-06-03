@@ -4,11 +4,11 @@ const path = require('path');
 const bodyParser = require('body-parser')
 const routes = require('./routes');
 const configs = require('./config');
-//const db = require('./config/database')
+const db = require('./config/database')
 require('dotenv').config({ path: 'variables.env' });
 
-// db.authenticate()
-// console.log('DB Connected');
+db.authenticate()
+console.log('DB Connected');
 
 // Configurar express
 const app = express();
